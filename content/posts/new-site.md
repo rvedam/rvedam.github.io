@@ -16,7 +16,7 @@ the following technologies to pick one that would be right for the site:
 * Hakyll (written in Haskell)
 * Coleslaw (written in Common Lisp)
 
-At the time, since Hugo was fairly young at the time and being interested in 
+Since Hugo was fairly young at the time and being interested in 
 writing a project in Common Lisp, I decided to use Coleslaw and I set up a 
 process where I had one repository for my Common Lisp site and I had a shell 
 script which built the site and ultimately copied the final results into what
