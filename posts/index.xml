@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Posts on lambdajunkie</title>
+    
+    
+    
+    <link>https://lambdajunkie.org/posts/</link>
+    <description>Recent content in Posts on lambdajunkie</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Mon, 31 May 2021 14:18:46 -0600</lastBuildDate>
+    
+	<atom:link href="https://lambdajunkie.org/posts/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>New Site Layout</title>
+      <link>https://lambdajunkie.org/posts/new-site/</link>
+      <pubDate>Mon, 31 May 2021 14:18:46 -0600</pubDate>
+      
+      <guid>https://lambdajunkie.org/posts/new-site/</guid>
+      <description>
+        
+          
+          
+          
+        
+        
+        
+          Hello blogosphere! Sorry for the long delay 3 year gap from my last post. After a long break during which I completed graduate school as well as starting a couple of other study groups for Atlanta Functional Programming, I decided to get back into the blogging game. During this time, looking at my current blog site and process to publishing new content, I decided to first update my site and its layout.
+          
+        
+        </description>
+    </item>
+    
+  </channel>
+</rss>
