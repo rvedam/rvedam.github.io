@@ -3,7 +3,7 @@ title: "New Site Layout"
 date: 2021-05-31T14:18:46-06:00
 ---
 
-Hello blogosphere! Sorry for the long delay 3 year gap from my last post.
+Hello blogosphere! Sorry for the long 3 year gap from my last post.
 After a long break during which I completed graduate school as well as 
 starting a couple of other study groups for Atlanta Functional Programming, 
 I decided to get back into the blogging game. During this time, looking at
