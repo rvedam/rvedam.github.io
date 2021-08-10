@@ -17,7 +17,12 @@ be a github repo for people to fork, and hopefully critique)
 I am an advocate for functional programming and am interested in its role in the 
 technology landscape as it gets wider adoption. I am also interested in the 
 continuous evolution of both the field of computer science and the software industry 
-in general. To further pursue this interest, I organize and give talks online for 
-the Atlanta Functional Programming Meetup. One of these activities is the CL study 
-group, which is a virtual study group that is live streamed on Youtube. Please 
-check them out!
+in general. To further pursue these interests, I organize and give talks online for 
+the Atlanta Functional Programming Meetup. A couple of these activities include
+the following study groups (held virtually weekly and livestreamed via Youtube):
+
+* CL Study group
+* Haskell Study Group
+
+Please join us! More information about these meetups are available on the
+Atlanta Functional Programming meetup page.
