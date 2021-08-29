@@ -2,13 +2,16 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
-    <loc>https://lambdajunkie.org/</loc>
-    <lastmod>2021-05-31T14:18:46-06:00</lastmod>
+    <loc>https://lambdajunkie.org/posts/reflections-part-one/</loc>
+    <lastmod>2021-08-29T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://lambdajunkie.org/posts/new-site/</loc>
-    <lastmod>2021-05-31T14:18:46-06:00</lastmod>
+    <loc>https://lambdajunkie.org/</loc>
+    <lastmod>2021-08-29T00:00:00+00:00</lastmod>
   </url><url>
     <loc>https://lambdajunkie.org/posts/</loc>
+    <lastmod>2021-08-29T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://lambdajunkie.org/posts/new-site/</loc>
     <lastmod>2021-05-31T14:18:46-06:00</lastmod>
   </url><url>
     <loc>https://lambdajunkie.org/about/</loc>

@@ -9,10 +9,30 @@
     <description>Recent content on lambdajunkie</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Mon, 31 May 2021 14:18:46 -0600</lastBuildDate>
+    <lastBuildDate>Sun, 29 Aug 2021 00:00:00 +0000</lastBuildDate>
     
 	<atom:link href="https://lambdajunkie.org/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>A chance for reflection - Motivations</title>
+      <link>https://lambdajunkie.org/posts/reflections-part-one/</link>
+      <pubDate>Sun, 29 Aug 2021 00:00:00 +0000</pubDate>
+      
+      <guid>https://lambdajunkie.org/posts/reflections-part-one/</guid>
+      <description>
+        
+          
+          
+          
+        
+        
+        
+          September 1st marks 16 years since I graduated from University of Illinois with my BS in Mathematics &amp;amp; Computer Science, and I entered the software industry officially. A lot has changed since then, from how we develop software to how we manage software projects, to how software companies are established. So much has changed so quickly in the last 16 years that it prompted me to start looking back to where the industry was at the time I started, in an effort to understand the evolution and more importantly figure out if some modern trends were making more sense than others.
+          
+        
+        </description>
+    </item>
     
     <item>
       <title>New Site Layout</title>
