@@ -2,9 +2,10 @@ baseURL = "https://lambdajunkie.org/"
 baseurl      = "localhost"
 title        = "lambdajunkie"
 languageCode = "en-us"
-theme        = "hello-friend"
-paginate     = 10
+theme        = "hello-friend-ng"
 
+[pagination]
+    pagerSize     = 10
 [params]
   # dir name of your blog content (default is `content/posts`).
   # the list of set content will show up on your index page (baseurl).
@@ -30,21 +31,22 @@ paginate     = 10
 [languages]
   [languages.en]
     title = "lambdajunkie"
-    subtitle = "A blog on Lisp, FP and random ramblings"
-    keywords = "lambdajunkie"
     copyright = ""
-    menuMore = "Show more"
-    writtenBy = "Written by Ram Vedam"
-    readMore = "Read more"
-    readOtherPosts = "Read other posts"
-    newerPosts = "Newer posts"
-    olderPosts = "Older posts"
-    minuteReadingTime = "min read"
-    dateFormatSingle = "2006-01-02"
-    dateFormatList = "2006-01-02"
-    # leave empty to disable, enter display text to enable
-    # lastModDisplay = ""
 
+    [languages.en.params]
+        keywords = "lambdajunkie"
+        subtitle = "A blog on Lisp, FP and random ramblings"
+        minuteReadingTime = "min read"
+        # leave empty to disable, enter display text to enable
+        # lastModDisplay = ""
+        menuMore = "Show more"
+        readMore = "Read more"
+        readOtherPosts = "Read other posts"
+        writtenBy = "Written by Ram Vedam"
+        dateFormatSingle = "2006-01-02"
+        dateFormatList = "2006-01-02"
+        newerPosts = "Newer posts"
+        olderPosts = "Older posts"
     [languages.en.params.logo]
       logoText = "lambdajunkie"
       logoHomeLink = "/"
