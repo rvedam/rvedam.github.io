@@ -1,58 +1,111 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
-  <channel>
-    <title>Posts on lambdajunkie</title>
-    
-    
-    
-    <link>https://lambdajunkie.org/posts/</link>
-    <description>Recent content in Posts on lambdajunkie</description>
-    <generator>Hugo -- gohugo.io</generator>
-    <language>en-us</language>
-    <lastBuildDate>Sun, 29 Aug 2021 00:00:00 +0000</lastBuildDate>
-    
-	<atom:link href="https://lambdajunkie.org/posts/index.xml" rel="self" type="application/rss+xml" />
-    
-    
-    <item>
-      <title>A chance for reflection - Motivations</title>
-      <link>https://lambdajunkie.org/posts/reflections-part-one/</link>
-      <pubDate>Sun, 29 Aug 2021 00:00:00 +0000</pubDate>
-      
-      <guid>https://lambdajunkie.org/posts/reflections-part-one/</guid>
-      <description>
+    <channel>
+        <title>Posts on lambdajunkie</title>
+        <link>https://lambdajunkie.org/posts/</link>
+        <description>Recent content in Posts on lambdajunkie</description>
+        <generator>Hugo -- gohugo.io</generator>
+        <language>en</language>
+        <lastBuildDate>Fri, 27 Aug 2021 00:00:00 +0000</lastBuildDate>
+        <atom:link href="https://lambdajunkie.org/posts/index.xml" rel="self" type="application/rss+xml" />
         
-          
-          
-          
+        <item>
+            <title>A chance for reflection - Motivations</title>
+            <link>https://lambdajunkie.org/posts/reflections-part-one/</link>
+            <pubDate>Fri, 27 Aug 2021 00:00:00 +0000</pubDate>
+            
+            <guid>https://lambdajunkie.org/posts/reflections-part-one/</guid>
+            <description>&lt;p&gt;September 1st marks 16 years since I graduated from University of Illinois with
+my BS in Mathematics &amp;amp; Computer Science, and I entered the software industry
+officially. A lot has changed since then, from how we develop software to how
+we manage software projects, to how software companies are established. So much
+has changed so quickly in the last 16 years that it prompted me to start looking
+back to where the industry was at the time I started, in an effort to understand
+the evolution and more importantly figure out if some modern trends were making
+more sense than others.  I came to a few realizations about this, and I thought
+I&amp;rsquo;d write them down here.&lt;/p&gt;</description>
+            <content type="html"><![CDATA[<p>September 1st marks 16 years since I graduated from University of Illinois with
+my BS in Mathematics &amp; Computer Science, and I entered the software industry
+officially. A lot has changed since then, from how we develop software to how
+we manage software projects, to how software companies are established. So much
+has changed so quickly in the last 16 years that it prompted me to start looking
+back to where the industry was at the time I started, in an effort to understand
+the evolution and more importantly figure out if some modern trends were making
+more sense than others.  I came to a few realizations about this, and I thought
+I&rsquo;d write them down here.</p>
+<p>I&rsquo;m sure some of you might ask &ldquo;Why write about this now?&rdquo;. The world as
+we know it has transformed due to the COVID-19 pandemic, and while many industries
+are still adjusting to this new environment with remote work, the software
+industry has been blazing trails with many companies actually shutting down their
+facilities in favor of a full remote workforce (more on this observation later).
+While one might think this is unprecedented even for the software community, this
+was a long time coming and was one of the realizations that I had while I
+embarked on this journey into looking back and understand how we got here.</p>
+<p>As I write these down, I hope to start up a discussion to see if other folks
+are observing similar things and are coming to the same conclusions. Hopefully,
+we can have a meaningful discussion, maybe even figure other changes that are
+required.</p>
+<p>That&rsquo;s it for now. Stay Tuned!</p>
+]]></content>
+        </item>
         
+        <item>
+            <title>New Site Layout</title>
+            <link>https://lambdajunkie.org/posts/new-site/</link>
+            <pubDate>Mon, 31 May 2021 14:18:46 -0600</pubDate>
+            
+            <guid>https://lambdajunkie.org/posts/new-site/</guid>
+            <description>&lt;p&gt;Hello blogosphere! Sorry for the long 3 year gap from my last post.
+After a long break during which I completed graduate school as well as
+starting a couple of other study groups for Atlanta Functional Programming,
+I decided to get back into the blogging game. During this time, looking at
+my current blog site and process to publishing new content, I decided to
+first update my site and its layout. Last time I set up the site, I went through
+the following technologies to pick one that would be right for the site:&lt;/p&gt;</description>
+            <content type="html"><![CDATA[<p>Hello blogosphere! Sorry for the long 3 year gap from my last post.
+After a long break during which I completed graduate school as well as
+starting a couple of other study groups for Atlanta Functional Programming,
+I decided to get back into the blogging game. During this time, looking at
+my current blog site and process to publishing new content, I decided to
+first update my site and its layout. Last time I set up the site, I went through
+the following technologies to pick one that would be right for the site:</p>
+<ul>
+<li>Hugo (written in Go)</li>
+<li>Jekyll (written in Ruby)</li>
+<li>Hakyll (written in Haskell)</li>
+<li>Coleslaw (written in Common Lisp)</li>
+</ul>
+<p>Since Hugo was fairly young at the time and being interested in
+writing a project in Common Lisp, I decided to use Coleslaw and I set up a
+process where I had one repository for my Common Lisp site and I had a shell
+script which built the site and ultimately copied the final results into what
+was ultimately published on lambdajunkie. Since then 3 year gap, the process for
+developing the site using Coleslaw stayed relatively stable, albeit somewhat
+cumbersome. Wanting to concentrate more on writing content than static site
+development I decided to go back this time around and re-evaluate the above list
+to see if anything has changed during the last 3 years. My requirements for
+using a static site generator were simple (much more than what most projects):</p>
+<ul>
+<li>Easy to generate pages (ideally using Markdown as it had some niceties for content
+publishing, mainly in the realm of code highlighting and there abouts)</li>
+<li>Must be able to integrate well with Github pages</li>
+<li>If at all possible, had to be able to use Github actions to setup the final site
+and subsequently post it to a <code>gh-pages</code> branch for publication (this is one
+feature I had to mimic with a shell script when using Coleslaw) or manually if
+necessary.</li>
+</ul>
+<p>Coleslaw, which has been stable for a while unfortunately has not been actively
+developed on while the Hugo ecosystem in the last 3 years has blown up significantly
+with a lot more themes, basic integrations, better documentation for doing various
+advanced things, as well as deployment documentation to run it in various scenarios,
+one of which is using Github actions to deploy the static site to Github pages in
+a <code>gh-pages</code> branch.</p>
+<p>This convinced me that it was time to retire the old CL site and revamp the site
+using Hugo instead using the <a href="https://themes.gohugo.io/hugo-theme-hello-friend/">hello-friend</a>
+theme. If you or your project requires a simple static site, and you don&rsquo;t want to use
+a CMS like WordPress, Hugo is definitely a good way to go! That&rsquo;s it for now.
+Stay tuned for more posts on FP, Lisp and other random ramblings!</p>
+]]></content>
+        </item>
         
-        
-          September 1st marks 16 years since I graduated from University of Illinois with my BS in Mathematics &amp;amp; Computer Science, and I entered the software industry officially. A lot has changed since then, from how we develop software to how we manage software projects, to how software companies are established. So much has changed so quickly in the last 16 years that it prompted me to start looking back to where the industry was at the time I started, in an effort to understand the evolution and more importantly figure out if some modern trends were making more sense than others.
-          
-        
-        </description>
-    </item>
-    
-    <item>
-      <title>New Site Layout</title>
-      <link>https://lambdajunkie.org/posts/new-site/</link>
-      <pubDate>Mon, 31 May 2021 14:18:46 -0600</pubDate>
-      
-      <guid>https://lambdajunkie.org/posts/new-site/</guid>
-      <description>
-        
-          
-          
-          
-        
-        
-        
-          Hello blogosphere! Sorry for the long 3 year gap from my last post. After a long break during which I completed graduate school as well as starting a couple of other study groups for Atlanta Functional Programming, I decided to get back into the blogging game. During this time, looking at my current blog site and process to publishing new content, I decided to first update my site and its layout.
-          
-        
-        </description>
-    </item>
-    
-  </channel>
+    </channel>
 </rss>
