@@ -12,7 +12,8 @@ theme        = "hello-friend-ng"
   contentTypeName = "posts"
 
   # "light" or "dark"
-  defaultTheme = "dark"
+  theme = "light"
+  enableThemeToggle=true
 
   # if you set this to 0, only submenu trigger will be visible
   showMenuItems = 5
@@ -31,10 +32,11 @@ theme        = "hello-friend-ng"
 [languages]
   [languages.en]
     title = "lambdajunkie"
-    copyright = ""
+    copyright = "2021-2024"
 
     [languages.en.params]
         keywords = "lambdajunkie"
+        homeSubtitle = "A blog on Lisp, FP and random ramblings"
         subtitle = "A blog on Lisp, FP and random ramblings"
         minuteReadingTime = "min read"
         # leave empty to disable, enter display text to enable
@@ -76,3 +78,10 @@ theme        = "hello-friend-ng"
         identifier = "twitter"
         name = "Twitter"
         url = "https://twitter.com/unxn3rd"
+
+[params.utterances]
+repository = "rvedam/rvedam.github.io"
+
+# All comment utterance issues will be labeled based on og:title
+issueTerm = "og:title"
+theme = "github-dark"
