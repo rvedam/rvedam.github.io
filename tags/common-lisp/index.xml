@@ -7,11 +7,11 @@
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <copyright>2021-2024</copyright>
-    <lastBuildDate>Fri, 20 Dec 2024 21:26:24 -0500</lastBuildDate><atom:link href="https://lambdajunkie.org/tags/common-lisp/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Mon, 23 Dec 2024 20:26:24 -0500</lastBuildDate><atom:link href="https://lambdajunkie.org/tags/common-lisp/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Web Development in Common Lisp: An Overview</title>
       <link>https://lambdajunkie.org/posts/web-dev-common-lisp-overview/</link>
-      <pubDate>Fri, 20 Dec 2024 21:26:24 -0500</pubDate>
+      <pubDate>Mon, 23 Dec 2024 20:26:24 -0500</pubDate>
       
       <guid>https://lambdajunkie.org/posts/web-dev-common-lisp-overview/</guid>
       <description>As we end the 2024 calendar year, I thought I would start a series of blog posts discussing a topic I feel I&amp;rsquo;ve neglected to discuss at length: Web Development in Common Lisp. Today, I will begin with:
