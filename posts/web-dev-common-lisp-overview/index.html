@@ -1,0 +1,351 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+<meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<meta name="author" content="">
+<meta name="description" content="As we end the 2024 calendar year, I thought I would start a series of blog posts discussing a topic I feel I&amp;rsquo;ve neglected to discuss at length: Web Development in Common Lisp. Today, I will begin with:
+Current State (Frameworks, libraries, etc.) Beginner Resources Current State of Web Development in CL The Web Development world in Common Lisp has changed significantly since the late 1990s. We have many html generators, basic libraries to create REST services via web servers such as Hunchentoot or Clack, and everything in between." />
+<meta name="keywords" content="lambdajunkie, Common Lisp, Web Development, Caveman, Ningle, CLOG" />
+<meta name="robots" content="noodp" />
+<meta name="theme-color" content="" />
+<link rel="canonical" href="https://lambdajunkie.org/posts/web-dev-common-lisp-overview/" />
+
+
+    <title>
+        
+            Web Development in Common Lisp: An Overview :: lambdajunkie  — A blog on Lisp, FP and random ramblings
+        
+    </title>
+
+
+
+
+
+  <link rel="stylesheet" href="/main.min.ab5336003ba331300318b49292c672210905baf1ef5410a739f647e70c8808fa.css" integrity="sha256-q1M2ADujMTADGLSSksZyIQkFuvHvVBCnOfZH5wyICPo=" crossorigin="anonymous">
+
+
+
+
+
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+    <link rel="manifest" href="/site.webmanifest">
+    <link rel="mask-icon" href="/safari-pinned-tab.svg" color="">
+    <link rel="shortcut icon" href="/favicon.ico">
+    <meta name="msapplication-TileColor" content="">
+
+
+<meta itemprop="name" content="Web Development in Common Lisp: An Overview">
+<meta itemprop="description" content="As we end the 2024 calendar year, I thought I would start a series of blog posts discussing a topic I feel I&rsquo;ve neglected to discuss at length: Web Development in Common Lisp. Today, I will begin with:
+Current State (Frameworks, libraries, etc.) Beginner Resources Current State of Web Development in CL The Web Development world in Common Lisp has changed significantly since the late 1990s. We have many html generators, basic libraries to create REST services via web servers such as Hunchentoot or Clack, and everything in between."><meta itemprop="datePublished" content="2024-12-20T21:26:24-05:00" />
+<meta itemprop="dateModified" content="2024-12-20T21:26:24-05:00" />
+<meta itemprop="wordCount" content="742">
+<meta itemprop="keywords" content="Common Lisp,Web Development,Caveman,Ningle,CLOG," />
+<meta name="twitter:card" content="summary"/>
+<meta name="twitter:title" content="Web Development in Common Lisp: An Overview"/>
+<meta name="twitter:description" content="As we end the 2024 calendar year, I thought I would start a series of blog posts discussing a topic I feel I&rsquo;ve neglected to discuss at length: Web Development in Common Lisp. Today, I will begin with:
+Current State (Frameworks, libraries, etc.) Beginner Resources Current State of Web Development in CL The Web Development world in Common Lisp has changed significantly since the late 1990s. We have many html generators, basic libraries to create REST services via web servers such as Hunchentoot or Clack, and everything in between."/>
+
+
+
+
+
+
+
+    <meta property="article:published_time" content="2024-12-20 21:26:24 -0500 EST" />
+
+
+
+
+
+
+
+
+
+
+
+
+    </head>
+
+    
+        <body>
+    
+    
+        <div class="container">
+            <header class="header">
+    <span class="header__inner">
+        <a href="/" style="text-decoration: none;">
+    <div class="logo">
+        
+            <span class="logo__mark">></span>
+            <span class="logo__text ">
+                lambdajunkie</span>
+            <span class="logo__cursor" style=
+                  "
+                   
+                   ">
+            </span>
+        
+    </div>
+</a>
+
+
+        <span class="header__right">
+                <nav class="menu">
+    <ul class="menu__inner"><li><a href="/about">About</a></li><li><a href="https://github.com/rvedam">Github</a></li><li><a href="https://www.linkedin.com/in/ramvedam/">LinkedIn</a></li><li><a href="/posts">Posts</a></li><li><a href="https://twitter.com/unxn3rd">Twitter</a></li>
+    </ul>
+</nav>
+
+                <span class="menu-trigger">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                        <path d="M0 0h24v24H0z" fill="none"/>
+                        <path d="M3 18h18v-2H3v2zm0-5h18v-2H3v2zm0-7v2h18V6H3z"/>
+                    </svg>
+                </span>
+                <span class="theme-toggle not-selectable"><svg class="theme-toggler" width="24" height="24" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+   <path d="M22 41C32.4934 41 41 32.4934 41 22C41 11.5066 32.4934 3 22
+   3C11.5066 3 3 11.5066 3 22C3 32.4934 11.5066 41 22 41ZM7 22C7
+   13.7157 13.7157 7 22 7V37C13.7157 37 7 30.2843 7 22Z"/>
+ </svg></span>
+        </span>
+    </span>
+</header>
+
+
+            <div class="content">
+                
+  <main class="post">
+
+    <div class="post-info">
+      <p>
+        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-clock">
+          <circle cx="12" cy="12" r="10"></circle>
+          <polyline points="12 6 12 12 16 14"></polyline>
+        </svg>
+        4 minutes
+
+        
+      </p>
+    </div>
+
+    <article>
+      <h1 class="post-title">
+        <a href="https://lambdajunkie.org/posts/web-dev-common-lisp-overview/">Web Development in Common Lisp: An Overview</a>
+      </h1>
+
+      
+
+      
+
+      
+
+      <div class="post-content">
+        <p>As we end the 2024 calendar year, I thought I would start a series of blog posts
+discussing a topic I feel I&rsquo;ve neglected to discuss at length: Web Development
+in Common Lisp. Today, I will begin with:</p>
+<ul>
+<li>Current State (Frameworks, libraries, etc.)</li>
+<li>Beginner Resources</li>
+</ul>
+<h2 id="current-state-of-web-development-in-cl">Current State of Web Development in CL</h2>
+<p>The Web Development world in Common Lisp has changed significantly since the
+late 1990s. We have many html generators, basic libraries to create REST
+services via web servers such as Hunchentoot or Clack, and everything in
+between. Before embarking on our project journey, I felt it important to first
+begin with a quick rundown of the different ways that we can currently use
+Common Lisp (from here on I&rsquo;m abbreviating it as CL) in web development.</p>
+<h3 id="restful-services">RESTful services</h3>
+<p>The most obvious way to use CL in web development is to leverage it to write
+RESTful services and APIs. There are many libraries to do this, each with
+differing levels of maturity:</p>
+<ul>
+<li><a href="https://github.com/archimag/restas">restas</a></li>
+</ul>
+<p>This is the first library I personally used to write proper REST services in CL.
+The examples on github provide the most obvious uses of it and it&rsquo;s fairly
+straightforward. This leverages Hunchentoot heavily for the server-side routing
+of different urls, and as far as I can tell nothing is in the works to get it
+working with say Clack (which is newer web server, which I&rsquo;ll get into later).
+Still from my basic uses, it looks like the basic necessities to write
+REST services are still present. That said, I haven&rsquo;t seen any clear examples
+of using a security framework say like with ironclad to do authentication and
+authorization-based services with this. Additionally, I don&rsquo;t have personal
+experience with writing any services that leverages architectural styles that
+leverage something like say OAuth.</p>
+<ul>
+<li><a href="https://github.com/edicl/hunchentoot">Hunchentoot</a></li>
+</ul>
+<p>Hunchentoot, as many of you may know, is actually a fully-fledged web-server
+written in CL. It provides a full implementation of HTTP/1.1 along with
+features for persistent connections, use of SSL, etc. In addition to all the
+standard features associated with running it as an actual webserver,
+Hunchentoot also provides facilities to write full services on top of it as
+well (although, the implementation will be tied to and must rely on deploying
+with Hunchentoot exclusively). Still this library is actively developed on,
+and is extremely stable from what I can tell so if you just need to write a
+few handlers and want finer control this is an option.</p>
+<h3 id="html-generators">HTML Generators</h3>
+<p>There are a plethora of HTML generation libraries in CL to write out your static
+content. A few examples are:</p>
+<ul>
+<li><a href="https://github.com/edicl/cl-who/">cl-who</a></li>
+<li><a href="https://github.com/edicl/html-template/">html-template</a></li>
+<li><a href="https://github.com/mmontone/djula">djula</a></li>
+</ul>
+<p>port of Python&rsquo;s Django template engine.</p>
+<ul>
+<li><a href="https://github.com/ruricolist/spinneret">spinneret</a></li>
+</ul>
+<p>HTML5 Generator library with a more modern approach to application design. Also,
+includes some support of using parenscript directly via spinneret/ps</p>
+<h3 id="javascript-transpilation">Javascript transpilation</h3>
+<p>For Javscript transpilation, we have both Parenscript and Paren6 (which I will cover in a
+separate post.</p>
+<h3 id="lightweight-frameworks">Lightweight frameworks</h3>
+<ul>
+<li><a href="https://github.com/fukamachi/ningle">ningle</a></li>
+</ul>
+<p>One of Eitaro Fukamachi&rsquo;s frameworks. This library is a spiritual port of Ruby&rsquo;s
+Sinatra library. The purpose is to provide a bare minimum structure to create fast services
+and basic web applications</p>
+<h3 id="full-fledged-web-frameworks">Full-Fledged Web Frameworks</h3>
+<p>Some particular ones I want to highlight is</p>
+<p>-<a href="https://40ants.com/weblocks/quickstart.html">Weblocks</a></p>
+<p>This is probably one of more the venerable frameworks, modeling itself after I
+believe Smalltalk&rsquo;s Seaside framework. This hides a lot of complexities related
+to building web applications, but is pretty heavy weight compared to most modern
+approaches. Still it&rsquo;s an option if the web application is small and well-defined
+enough to allow you to build everything using this heavy-weight approach.</p>
+<ul>
+<li><a href="https://github.com/fukamachi/caveman">Caveman</a></li>
+</ul>
+<p>Another a full fledged framework for writing applications</p>
+<h2 id="beginner-resources">Beginner Resources</h2>
+<p>There are a bunch of beginner resources to help one to not only write web
+applications in CL, but also to deploy them. Naturally, I would highly recommend
+the <a href="https://lispcookbook.github.io/cl-cookbook/">Common Lisp Cookbook</a> because
+it provides not only great simple examples to get you started, but also provides
+many ways to deploy your applications and prepare them for scaling (along with
+ways to monitor your web apps using prometheus and grafana)</p>
+<h2 id="future-work-and-conclusions">Future Work and Conclusions</h2>
+<p>That&rsquo;s it for Part 1 in this series. While I mainly focused on my experience
+with these libraries from dabbling, I know a lot has changed and continues to
+change for Web Development in CL. Next time I&rsquo;m hoping to document an project
+so that others can have a documented way of writing a proper HTML5 app so that
+they have a starting point with CL as an option.</p>
+
+      </div>
+    </article>
+
+    <hr />
+
+    <div class="post-info">
+      
+    <p>
+        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-tag meta-icon"><path d="M20.59 13.41l-7.17 7.17a2 2 0 0 1-2.83 0L2 12V2h10l8.59 8.59a2 2 0 0 1 0 2.82z"></path><line x1="7" y1="7" x2="7" y2="7"></line></svg>
+
+        <span class="tag"><a href="https://lambdajunkie.org/tags/common-lisp/">Common Lisp</a></span>
+        <span class="tag"><a href="https://lambdajunkie.org/tags/web-development/">Web Development</a></span>
+        <span class="tag"><a href="https://lambdajunkie.org/tags/caveman/">Caveman</a></span>
+        <span class="tag"><a href="https://lambdajunkie.org/tags/ningle/">Ningle</a></span>
+        <span class="tag"><a href="https://lambdajunkie.org/tags/clog/">CLOG</a></span>
+        
+    </p>
+
+      
+
+      <p>
+        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-file-text">
+          <path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"></path>
+          <polyline points="14 2 14 8 20 8"></polyline>
+          <line x1="16" y1="13" x2="8" y2="13"></line>
+          <line x1="16" y1="17" x2="8" y2="17"></line>
+          <polyline points="10 9 9 9 8 9"></polyline>
+        </svg>
+        742 Words
+      </p>
+
+      <p>
+        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-calendar">
+          <rect x="3" y="4" width="18" height="18" rx="2" ry="2"></rect>
+          <line x1="16" y1="2" x2="16" y2="6"></line>
+          <line x1="8" y1="2" x2="8" y2="6"></line>
+          <line x1="3" y1="10" x2="21" y2="10"></line>
+        </svg>
+        
+          2024-12-20 21:26
+        
+
+         
+          
+        
+      </p>
+    </div>
+
+    
+    <div class="pagination">
+        
+        <div class="pagination__title">
+            <span class="pagination__title-h">Read other posts</span>
+            <hr />
+        </div>
+        
+
+        <div class="pagination__buttons">
+            
+
+            
+            <span class="button next">
+                <a href="https://lambdajunkie.org/posts/reflections-part-one/">
+                    <span class="button__text">A chance for reflection - Motivations</span>
+                    <span class="button__icon">→</span>
+                </a>
+            </span>
+            
+        </div>
+    </div>
+
+
+    
+
+    
+
+    
+    <script src="https://utteranc.es/client.js"
+            repo="rvedam/rvedam.github.io"
+            
+            issue-term="og:title"
+            theme="github-dark"
+            crossorigin="anonymous"
+            async>
+    </script>
+    
+
+  </main>
+
+            </div>
+
+            
+                <footer class="footer">
+    
+    
+</footer>
+
+            
+        </div>
+
+        
+
+
+
+<script type="text/javascript" src="/bundle.min.205d491810c28f95aa953fae884e1c27abe13fdf93ec63b882d0036b248d4a6282eb2d134e4e7225c6ad6e86db87b08488a361ca4a7383d01fcff43f3d57b9c3.js" integrity="sha512-IF1JGBDCj5WqlT&#43;uiE4cJ6vhP9&#43;T7GO4gtADaySNSmKC6y0TTk5yJcatbobbh7CEiKNhykpzg9Afz/Q/PVe5ww=="></script>
+
+
+
+
+    </body>
+</html>

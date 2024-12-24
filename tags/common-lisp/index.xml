@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Common Lisp on lambdajunkie</title>
+    <link>https://lambdajunkie.org/tags/common-lisp/</link>
+    <description>Recent content in Common Lisp on lambdajunkie</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <copyright>2021-2024</copyright>
+    <lastBuildDate>Fri, 20 Dec 2024 21:26:24 -0500</lastBuildDate><atom:link href="https://lambdajunkie.org/tags/common-lisp/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Web Development in Common Lisp: An Overview</title>
+      <link>https://lambdajunkie.org/posts/web-dev-common-lisp-overview/</link>
+      <pubDate>Fri, 20 Dec 2024 21:26:24 -0500</pubDate>
+      
+      <guid>https://lambdajunkie.org/posts/web-dev-common-lisp-overview/</guid>
+      <description>As we end the 2024 calendar year, I thought I would start a series of blog posts discussing a topic I feel I&amp;rsquo;ve neglected to discuss at length: Web Development in Common Lisp. Today, I will begin with:
+Current State (Frameworks, libraries, etc.) Beginner Resources Current State of Web Development in CL The Web Development world in Common Lisp has changed significantly since the late 1990s. We have many html generators, basic libraries to create REST services via web servers such as Hunchentoot or Clack, and everything in between.</description>
+    </item>
+    
+  </channel>
+</rss>

@@ -4,31 +4,47 @@
     <title>lambdajunkie</title>
     <link>https://lambdajunkie.org/</link>
     <description>Recent content on lambdajunkie</description>
-    <generator>Hugo</generator>
-    <language>en</language>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
     <copyright>2021-2024</copyright>
-    <lastBuildDate>Fri, 27 Aug 2021 00:00:00 +0000</lastBuildDate>
-    <atom:link href="https://lambdajunkie.org/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Fri, 20 Dec 2024 21:26:24 -0500</lastBuildDate><atom:link href="https://lambdajunkie.org/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Web Development in Common Lisp: An Overview</title>
+      <link>https://lambdajunkie.org/posts/web-dev-common-lisp-overview/</link>
+      <pubDate>Fri, 20 Dec 2024 21:26:24 -0500</pubDate>
+      
+      <guid>https://lambdajunkie.org/posts/web-dev-common-lisp-overview/</guid>
+      <description>As we end the 2024 calendar year, I thought I would start a series of blog posts discussing a topic I feel I&amp;rsquo;ve neglected to discuss at length: Web Development in Common Lisp. Today, I will begin with:
+Current State (Frameworks, libraries, etc.) Beginner Resources Current State of Web Development in CL The Web Development world in Common Lisp has changed significantly since the late 1990s. We have many html generators, basic libraries to create REST services via web servers such as Hunchentoot or Clack, and everything in between.</description>
+    </item>
+    
     <item>
       <title>A chance for reflection - Motivations</title>
       <link>https://lambdajunkie.org/posts/reflections-part-one/</link>
       <pubDate>Fri, 27 Aug 2021 00:00:00 +0000</pubDate>
+      
       <guid>https://lambdajunkie.org/posts/reflections-part-one/</guid>
-      <description>&lt;p&gt;September 1st marks 16 years since I graduated from University of Illinois with&#xA;my BS in Mathematics &amp;amp; Computer Science, and I entered the software industry&#xA;officially. A lot has changed since then, from how we develop software to how&#xA;we manage software projects, to how software companies are established. So much&#xA;has changed so quickly in the last 16 years that it prompted me to start looking&#xA;back to where the industry was at the time I started, in an effort to understand&#xA;the evolution and more importantly figure out if some modern trends were making&#xA;more sense than others.  I came to a few realizations about this, and I thought&#xA;I&amp;rsquo;d write them down here.&lt;/p&gt;</description>
+      <description>September 1st marks 16 years since I graduated from University of Illinois with my BS in Mathematics &amp;amp; Computer Science, and I entered the software industry officially. A lot has changed since then, from how we develop software to how we manage software projects, to how software companies are established. So much has changed so quickly in the last 16 years that it prompted me to start looking back to where the industry was at the time I started, in an effort to understand the evolution and more importantly figure out if some modern trends were making more sense than others.</description>
     </item>
+    
     <item>
       <title>New Site Layout</title>
       <link>https://lambdajunkie.org/posts/new-site/</link>
       <pubDate>Mon, 31 May 2021 14:18:46 -0600</pubDate>
+      
       <guid>https://lambdajunkie.org/posts/new-site/</guid>
-      <description>&lt;p&gt;Hello blogosphere! Sorry for the long 3 year gap from my last post.&#xA;After a long break during which I completed graduate school as well as&#xA;starting a couple of other study groups for Atlanta Functional Programming,&#xA;I decided to get back into the blogging game. During this time, looking at&#xA;my current blog site and process to publishing new content, I decided to&#xA;first update my site and its layout. Last time I set up the site, I went through&#xA;the following technologies to pick one that would be right for the site:&lt;/p&gt;</description>
+      <description>Hello blogosphere! Sorry for the long 3 year gap from my last post. After a long break during which I completed graduate school as well as starting a couple of other study groups for Atlanta Functional Programming, I decided to get back into the blogging game. During this time, looking at my current blog site and process to publishing new content, I decided to first update my site and its layout.</description>
     </item>
+    
     <item>
       <title>About Ram Vedam</title>
       <link>https://lambdajunkie.org/about/</link>
       <pubDate>Mon, 24 May 2021 07:53:05 -0600</pubDate>
+      
       <guid>https://lambdajunkie.org/about/</guid>
-      <description>&lt;p&gt;While I rather not make this into a long professional bio, I will start by&#xA;saying I am a seasoned developer. If you would like to know more about my&#xA;experience please refer to my professional profile on LinkedIn for a more&#xA;complete picture.&lt;/p&gt;&#xA;&lt;p&gt;I code in many languages, although Common Lisp is one of my favorites. I code in&#xA;it for fun and education, although recently I have been looking into do more work&#xA;with it for some side projects. Hopefully, time permitting, these projects and&#xA;ideas will lead to something that I can show all in the blogosphere (if not it&amp;rsquo;ll&#xA;be a github repo for people to fork, and hopefully critique)&lt;/p&gt;</description>
+      <description>While I rather not make this into a long professional bio, I will start by saying I am a seasoned developer. If you would like to know more about my experience please refer to my professional profile on LinkedIn for a more complete picture.
+I code in many languages, although Common Lisp is one of my favorites. I code in it for fun and education, although recently I have been looking into do more work with it for some side projects.</description>
     </item>
+    
   </channel>
 </rss>

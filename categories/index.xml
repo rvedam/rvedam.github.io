@@ -4,9 +4,8 @@
     <title>Categories on lambdajunkie</title>
     <link>https://lambdajunkie.org/categories/</link>
     <description>Recent content in Categories on lambdajunkie</description>
-    <generator>Hugo</generator>
-    <language>en</language>
-    <copyright>2021-2024</copyright>
-    <atom:link href="https://lambdajunkie.org/categories/index.xml" rel="self" type="application/rss+xml" />
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <copyright>2021-2024</copyright><atom:link href="https://lambdajunkie.org/categories/index.xml" rel="self" type="application/rss+xml" />
   </channel>
 </rss>

@@ -4,10 +4,114 @@
         <link>https://lambdajunkie.org/posts/</link>
         <description>Recent content in Posts on lambdajunkie</description>
         <generator>Hugo -- gohugo.io</generator>
-        <language>en</language>
+        <language>en-us</language>
         <copyright>2021-2024</copyright>
-        <lastBuildDate>Fri, 27 Aug 2021 00:00:00 +0000</lastBuildDate>
+        <lastBuildDate>Fri, 20 Dec 2024 21:26:24 -0500</lastBuildDate>
         <atom:link href="https://lambdajunkie.org/posts/index.xml" rel="self" type="application/rss+xml" />
+        
+        <item>
+            <title>Web Development in Common Lisp: An Overview</title>
+            <link>https://lambdajunkie.org/posts/web-dev-common-lisp-overview/</link>
+            <pubDate>Fri, 20 Dec 2024 21:26:24 -0500</pubDate>
+            
+            <guid>https://lambdajunkie.org/posts/web-dev-common-lisp-overview/</guid>
+            <description>As we end the 2024 calendar year, I thought I would start a series of blog posts discussing a topic I feel I&amp;rsquo;ve neglected to discuss at length: Web Development in Common Lisp. Today, I will begin with:
+Current State (Frameworks, libraries, etc.) Beginner Resources Current State of Web Development in CL The Web Development world in Common Lisp has changed significantly since the late 1990s. We have many html generators, basic libraries to create REST services via web servers such as Hunchentoot or Clack, and everything in between.</description>
+            <content type="html"><![CDATA[<p>As we end the 2024 calendar year, I thought I would start a series of blog posts
+discussing a topic I feel I&rsquo;ve neglected to discuss at length: Web Development
+in Common Lisp. Today, I will begin with:</p>
+<ul>
+<li>Current State (Frameworks, libraries, etc.)</li>
+<li>Beginner Resources</li>
+</ul>
+<h2 id="current-state-of-web-development-in-cl">Current State of Web Development in CL</h2>
+<p>The Web Development world in Common Lisp has changed significantly since the
+late 1990s. We have many html generators, basic libraries to create REST
+services via web servers such as Hunchentoot or Clack, and everything in
+between. Before embarking on our project journey, I felt it important to first
+begin with a quick rundown of the different ways that we can currently use
+Common Lisp (from here on I&rsquo;m abbreviating it as CL) in web development.</p>
+<h3 id="restful-services">RESTful services</h3>
+<p>The most obvious way to use CL in web development is to leverage it to write
+RESTful services and APIs. There are many libraries to do this, each with
+differing levels of maturity:</p>
+<ul>
+<li><a href="https://github.com/archimag/restas">restas</a></li>
+</ul>
+<p>This is the first library I personally used to write proper REST services in CL.
+The examples on github provide the most obvious uses of it and it&rsquo;s fairly
+straightforward. This leverages Hunchentoot heavily for the server-side routing
+of different urls, and as far as I can tell nothing is in the works to get it
+working with say Clack (which is newer web server, which I&rsquo;ll get into later).
+Still from my basic uses, it looks like the basic necessities to write
+REST services are still present. That said, I haven&rsquo;t seen any clear examples
+of using a security framework say like with ironclad to do authentication and
+authorization-based services with this. Additionally, I don&rsquo;t have personal
+experience with writing any services that leverages architectural styles that
+leverage something like say OAuth.</p>
+<ul>
+<li><a href="https://github.com/edicl/hunchentoot">Hunchentoot</a></li>
+</ul>
+<p>Hunchentoot, as many of you may know, is actually a fully-fledged web-server
+written in CL. It provides a full implementation of HTTP/1.1 along with
+features for persistent connections, use of SSL, etc. In addition to all the
+standard features associated with running it as an actual webserver,
+Hunchentoot also provides facilities to write full services on top of it as
+well (although, the implementation will be tied to and must rely on deploying
+with Hunchentoot exclusively). Still this library is actively developed on,
+and is extremely stable from what I can tell so if you just need to write a
+few handlers and want finer control this is an option.</p>
+<h3 id="html-generators">HTML Generators</h3>
+<p>There are a plethora of HTML generation libraries in CL to write out your static
+content. A few examples are:</p>
+<ul>
+<li><a href="https://github.com/edicl/cl-who/">cl-who</a></li>
+<li><a href="https://github.com/edicl/html-template/">html-template</a></li>
+<li><a href="https://github.com/mmontone/djula">djula</a></li>
+</ul>
+<p>port of Python&rsquo;s Django template engine.</p>
+<ul>
+<li><a href="https://github.com/ruricolist/spinneret">spinneret</a></li>
+</ul>
+<p>HTML5 Generator library with a more modern approach to application design. Also,
+includes some support of using parenscript directly via spinneret/ps</p>
+<h3 id="javascript-transpilation">Javascript transpilation</h3>
+<p>For Javscript transpilation, we have both Parenscript and Paren6 (which I will cover in a
+separate post.</p>
+<h3 id="lightweight-frameworks">Lightweight frameworks</h3>
+<ul>
+<li><a href="https://github.com/fukamachi/ningle">ningle</a></li>
+</ul>
+<p>One of Eitaro Fukamachi&rsquo;s frameworks. This library is a spiritual port of Ruby&rsquo;s
+Sinatra library. The purpose is to provide a bare minimum structure to create fast services
+and basic web applications</p>
+<h3 id="full-fledged-web-frameworks">Full-Fledged Web Frameworks</h3>
+<p>Some particular ones I want to highlight is</p>
+<p>-<a href="https://40ants.com/weblocks/quickstart.html">Weblocks</a></p>
+<p>This is probably one of more the venerable frameworks, modeling itself after I
+believe Smalltalk&rsquo;s Seaside framework. This hides a lot of complexities related
+to building web applications, but is pretty heavy weight compared to most modern
+approaches. Still it&rsquo;s an option if the web application is small and well-defined
+enough to allow you to build everything using this heavy-weight approach.</p>
+<ul>
+<li><a href="https://github.com/fukamachi/caveman">Caveman</a></li>
+</ul>
+<p>Another a full fledged framework for writing applications</p>
+<h2 id="beginner-resources">Beginner Resources</h2>
+<p>There are a bunch of beginner resources to help one to not only write web
+applications in CL, but also to deploy them. Naturally, I would highly recommend
+the <a href="https://lispcookbook.github.io/cl-cookbook/">Common Lisp Cookbook</a> because
+it provides not only great simple examples to get you started, but also provides
+many ways to deploy your applications and prepare them for scaling (along with
+ways to monitor your web apps using prometheus and grafana)</p>
+<h2 id="future-work-and-conclusions">Future Work and Conclusions</h2>
+<p>That&rsquo;s it for Part 1 in this series. While I mainly focused on my experience
+with these libraries from dabbling, I know a lot has changed and continues to
+change for Web Development in CL. Next time I&rsquo;m hoping to document an project
+so that others can have a documented way of writing a proper HTML5 app so that
+they have a starting point with CL as an option.</p>
+]]></content>
+        </item>
         
         <item>
             <title>A chance for reflection - Motivations</title>
@@ -15,15 +119,7 @@
             <pubDate>Fri, 27 Aug 2021 00:00:00 +0000</pubDate>
             
             <guid>https://lambdajunkie.org/posts/reflections-part-one/</guid>
-            <description>&lt;p&gt;September 1st marks 16 years since I graduated from University of Illinois with
-my BS in Mathematics &amp;amp; Computer Science, and I entered the software industry
-officially. A lot has changed since then, from how we develop software to how
-we manage software projects, to how software companies are established. So much
-has changed so quickly in the last 16 years that it prompted me to start looking
-back to where the industry was at the time I started, in an effort to understand
-the evolution and more importantly figure out if some modern trends were making
-more sense than others.  I came to a few realizations about this, and I thought
-I&amp;rsquo;d write them down here.&lt;/p&gt;</description>
+            <description>September 1st marks 16 years since I graduated from University of Illinois with my BS in Mathematics &amp;amp; Computer Science, and I entered the software industry officially. A lot has changed since then, from how we develop software to how we manage software projects, to how software companies are established. So much has changed so quickly in the last 16 years that it prompted me to start looking back to where the industry was at the time I started, in an effort to understand the evolution and more importantly figure out if some modern trends were making more sense than others.</description>
             <content type="html"><![CDATA[<p>September 1st marks 16 years since I graduated from University of Illinois with
 my BS in Mathematics &amp; Computer Science, and I entered the software industry
 officially. A lot has changed since then, from how we develop software to how
@@ -55,13 +151,7 @@ required.</p>
             <pubDate>Mon, 31 May 2021 14:18:46 -0600</pubDate>
             
             <guid>https://lambdajunkie.org/posts/new-site/</guid>
-            <description>&lt;p&gt;Hello blogosphere! Sorry for the long 3 year gap from my last post.
-After a long break during which I completed graduate school as well as
-starting a couple of other study groups for Atlanta Functional Programming,
-I decided to get back into the blogging game. During this time, looking at
-my current blog site and process to publishing new content, I decided to
-first update my site and its layout. Last time I set up the site, I went through
-the following technologies to pick one that would be right for the site:&lt;/p&gt;</description>
+            <description>Hello blogosphere! Sorry for the long 3 year gap from my last post. After a long break during which I completed graduate school as well as starting a couple of other study groups for Atlanta Functional Programming, I decided to get back into the blogging game. During this time, looking at my current blog site and process to publishing new content, I decided to first update my site and its layout.</description>
             <content type="html"><![CDATA[<p>Hello blogosphere! Sorry for the long 3 year gap from my last post.
 After a long break during which I completed graduate school as well as
 starting a couple of other study groups for Atlanta Functional Programming,
